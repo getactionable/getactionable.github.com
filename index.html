@@ -7,95 +7,46 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>GetActionable.com</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/structure.css" type="text/css">
-  <link rel="stylesheet" href="css/form.css" type="text/css">
+	<link rel="stylesheet" href="//f.fontdeck.com/s/css/n2rUNon0FDFP+cgx/esBwO38cy8/local.getactionable.com/4267.css" type="text/css">
+	<link rel="stylesheet" href="//local.getactionable.com/css/bootstrap-1.1.0.css" type="text/css">
+	<link rel="stylesheet" href="//local.getactionable.com/css/main.css" type="text/css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
-  <script src="js/wufoo.js"></script>
 </head>
-<body>
+<body class="container">
 
-  <div id="container">
-    <header id="site-header" class="wufoo info" style="font-size: 180%;font-weight:bold;">
-		<h1 style="margin:25px 10px 0px;">GetActionable.com</h1>
-    </header>
-
-	<section style="padding: 2px 19px; border-bottom: 1px dotted #ccc;">
-		<h2>Rock solid GTD</h2>
-		<p>Getting stuff done in the most convenient way.</p>
-	</section>
-
-	<div id="main" role="main">
-		
-		<form id="form1" name="form1" class="wufoo  page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-		action="http://getactionable.wufoo.com/forms/z7x3k7/#public">
-
-		<header id="header" class="info">
-		<h2>Join our Private Beta</h2>
-		<div>And stay up to date on the latest news and info!</div>
-		</header>
-
+<header class="row">
+	<hgroup class="span12 columns">
+		<h1><span>Get</span>Actionable.</h1>
+		<h2>the most convenient way to get stuff done</h2>
+	</hgroup>
+	<nav class="span4 columns" style="display: none;">
 		<ul>
-
-		<li id="foli0" class="     ">
-		<label class="desc" id="title0" for="Field0">
-		Your Email Address
-		<span id="req_0" class="req">*</span>
-		</label>
-		<div>
-		<input id="Field0" name="Field0" type="email" spellcheck="false" class="field text large" value="" maxlength="255" tabindex="3" required /> 
-		</div>
-		</li> <li class="buttons ">
-		<div>
-
-		<input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Request your invite!"
-		 /></div>
-		</li>
-
-		<li class="hide">
-		<label for="comment">Do Not Fill This Out</label>
-		<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-		<input type="hidden" id="idstamp" name="idstamp" value="MEDeiZ97+tgZ1OrTNVRvI8Yjt8OdfJZcRTmSiPR2y9w=" />
-		</li>
+			<li><a href="#" onlclick="alert('working on it');">blog</a></li>
+			<li><a href="#" onlclick="alert('working on it');">roadmap</a></li>
+			<li><a href="#" onlclick="alert('working on it');">support</a></li>
 		</ul>
-		</form>
-    </div>
-    <footer>
+	</nav>
+</header>
 
-    </footer>
-  </div> <!--! end of #container -->
+<section class="row">
+	<section class="span12 columns">
+		<p>
+			A productivity tool to help you get to your actionable state as quickly as possible by removing
+			clutter and letting you focus on what needs to get done.
+		</p>
+	</section>
+</section>
 
-
-  <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
-
-
-  <!-- Change UA-XXXXX-X to be your site's ID -->
-  <script>
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
-  </script>
-
-
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+<section id="invite" class="row">
+	<form class="span12 colums" action="http://getactionable.wufoo.com/forms/z7x3k7/#public" method="post" enctype="multipart/form-data" name="form1">
+		<input id="email-address" type="email" maxlength="255" spellcheck="false" name="Field0" placeholder="Email address">
+		<button type="submit" name="saveForm">Request an invite!</button>
+		<div style="display: none; clear: both;">
+			<textarea cols="1" rows="1" id="comment" name="comment"></textarea>
+			<input type="hidden" value="MEDeiZ97+tgZ1OrTNVRvI8Yjt8OdfJZcRTmSiPR2y9w=" name="idstamp">
+		</div>
+	</form>
+</section>
 
 </body>
 </html>

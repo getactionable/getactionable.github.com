@@ -61,7 +61,7 @@ form.wufoo{
 	min-height:40px;
 	height:40px;
 	display:block;
-	background:url(../images/wflogo.png) no-repeat left top;
+	background:url(../../images/wflogo.png) no-repeat left top;
 	overflow:hidden;
 }
 * html #logo a{
@@ -73,7 +73,7 @@ img, a img{
 	-ms-interpolation-mode: bicubic;
 }
 * html #bottom{ 
-	_behavior: url(../images/iepngfix.htc);
+	_behavior: url(../../images/iepngfix.htc);
 }
 .hide, .cloak div, .cloak span, .likert.cloak tbody, .likert.cloak thead{
 	display:none !important;

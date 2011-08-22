@@ -1,0 +1,70 @@
+body {
+	background: #F9F9F9;
+	color: #555;
+	padding-top: 72px;
+	/*margin: 0 auto;*/
+	/*width: 960px;*/
+}
+
+h1 {
+	color: #333;
+	font-family:"Mahalia Bold", cursive;
+	font-size-adjust: .438;
+	font-size: 72px;
+	font-style:normal;
+	font-weight:bold;
+}
+h1 span {
+	font-size: .9em;
+}
+h2 {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1;
+	margin-left: 42px;
+	margin-top: -16px;
+	opacity: .9;
+}
+
+p {
+	font-size: 1.5em;
+	line-height: 1.5;
+	margin: 2em 1em;
+}
+
+input {
+  border: 1px solid #666;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.4);
+  color: #888;
+  line-height: 1;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="tel"]:focus {
+  border-color: #999;
+  box-shadow: 0 0 5px rgba(75, 150, 225, 0.75);
+}
+#email-address {
+	font-size: 18px;
+	padding: 12px;
+	margin-left: 1em;
+	width: 360px;
+}
+form button {
+  background: -moz-linear-gradient(#E26994, #DC5381) repeat scroll 0 0 transparent;
+  border: 1px solid #AC3E65;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+	margin-left: .25em;
+  padding: 12px 12px 13px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	width: 240px;
+}
