@@ -1,9 +1,11 @@
+html, body {
+	background-color: #f5efd2;
+	/*background-color: rgb(243, 237, 210);*/
+}
 body {
-	background: #F9F9F9;
 	color: #555;
 	padding-top: 72px;
-	/*margin: 0 auto;*/
-	/*width: 960px;*/
+	text-shadow: 1px 1px 1px #fff;
 }
 
 h1 {
@@ -29,6 +31,7 @@ h2 {
 
 p {
 	font-size: 1.5em;
+	letter-spacing: 0.02em;
 	line-height: 1.5;
 	margin: 2em 1em;
 }
