@@ -34,7 +34,7 @@ h2 {
 
 p {
 	font-size: 1.5em;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.08em;
 	line-height: 1.5;
 	margin: 2em 1em;
 }
@@ -94,4 +94,8 @@ button:hover {
 	-moz-box-shadow: 0 0 5px #76c778;
 	-webkit-box-shadow: 0 0 5px #76c778;
 	box-shadow: 0 0 5px #76c778;
+}
+.error {
+	color: #ff1f1f;
+	margin: .4em 1.6em;
 }
