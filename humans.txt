@@ -1,0 +1,8 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Founder: Sido van Gennip
+  Site:    http://sidovangennip.com
+  Twitter: @sido
