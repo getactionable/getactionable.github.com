@@ -60,13 +60,13 @@ input[type="tel"]:focus {
 	-webkit-box-shadow: 0 0 5px #76c778;
   box-shadow: 0 0 5px #76c778;
 }
-#email-address {
+#invite-email {
 	font-size: 18px;
 	padding: 12px;
 	margin-left: 1em;
 	width: 360px;
 }
-button {
+#invite button {
 	background: -moz-linear-gradient(#76c778, #59b368);
 	background: -ms-linear-gradient(#76c778, #59b368);
 	background: -o-linear-gradient(#76c778, #59b368);
@@ -89,13 +89,26 @@ button {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 	width: 240px;
 }
-button:hover {
+#invite button:hover {
 	border: 1px solid #18533f;
 	-moz-box-shadow: 0 0 5px #76c778;
 	-webkit-box-shadow: 0 0 5px #76c778;
 	box-shadow: 0 0 5px #76c778;
 }
-.error {
+#invite .error {
 	color: #ff1f1f;
-	margin: .4em 1.6em;
+	display: none;
+	font-size: 1.2em;
+	letter-spacing: 0.08em;
+	margin: 1em 0 0;
+	padding: 1em 2em;
+}
+#invite .thanks {
+	display: none;
+}
+#error .error {
+	display: block;
+}
+#success #invite .thanks {
+	display: block;
 }

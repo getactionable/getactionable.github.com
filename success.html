@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="/css/main.css" type="text/css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
-<body class="container">
+<body id="success" class="container">
 
 <header class="row">
 	<hgroup class="span12 columns">
@@ -31,42 +31,25 @@
 	</nav>
 </header>
 
-<section class="row">
-	<section class="span12 columns">
-		<p>
-			A productivity tool to help you get to your actionable state as quickly as possible by removing
-			clutter and letting you focus on what needs to get done.
-		</p>
-	</section>
-</section>
-
 <section id="invite" class="row">
-	<form id="invite-form" class="span12 colums" action="http://angelmechanics.nl/getactionable/invites/" method="post" autocomplete="off">
-		<input id="invite-email" type="email" spellcheck="false" name="email" placeholder="Email address">
-		<button id="invite-submit" type="submit">Request an invite!</button>
-		<div id="invite-error" class="error">Please enter a valid email address.</div>
-	</form>
+	<div id="invite-thanks" class="thanks">
+		<p>Thank you for your interest in GetActionable.com.</p>
+		<p>We hope to give you access shortly. In the meantime, please take a moment to spread the word. You can get early access by inviting your friends. The more friends you invite, the sooner you'll get access!</p>
+		<p>Just give this link to your friends and you'll get referral credit!<br>
+		<span id="referral_link">{{tester.referral_link}}</span></p>
+		<p>Sincerely,<br>
+		Sido van Gennip<br>
+		<a href="http://angelmechanics.com">Angel Mechanics</a></p>
+	</div>
 </section>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>');</script>
+<script src="js/libs/jquery.url.js"></script>
 <script>
-	window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>');
 	$(document).ready(function() {
-		var $form = $('#invite-form');
-		var $error = $('#invite-error');
-		var $email = $('#invite-email');
-		var $button = $('#invite-submit');
-		var regexEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-		$form.submit(function() {
-			$button.attr('disabled', true);
-			$error.hide();
-			var email = $email.val();
-			if (!email || !regexEmail.test(email)) {
-				$button.attr('disabled', false);
-				$error.show();
-				return false;
-			}
-		});
+		var ref = $.url().param('ref');
+		$('#referral_link').html('<a href="'+ref+'">'+ref+'</a>');
 	});
 	window._gaq = [['_setAccount','UA-24528626-3'],['_trackPageview'],['_trackPageLoadTime']];
 	Modernizr.load({

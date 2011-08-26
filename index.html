@@ -41,14 +41,10 @@
 </section>
 
 <section id="invite" class="row">
-	<form id="form1" name="form1" class="span12 colums" action="http://getactionable.wufoo.com/forms/z7x3k7/#public" method="post" enctype="multipart/form-data" autocomplete="off">
-		<input id="email-address" type="text" maxlength="255" spellcheck="false" name="Field0" placeholder="Email address">
-		<button type="submit" name="saveForm">Request an invite!</button>
-		<div style="display: none; clear: both;">
-			<textarea cols="1" rows="1" id="comment" name="comment"></textarea>
-			<input type="hidden" value="MEDeiZ97+tgZ1OrTNVRvI8Yjt8OdfJZcRTmSiPR2y9w=" name="idstamp">
-		</div>
-		<p id="error" class="error" style="display: none;"></p>
+	<form id="invite-form" class="span12 colums" action="http://angelmechanics.nl/getactionable/invites/" method="post" autocomplete="off">
+		<input id="invite-email" type="email" spellcheck="false" name="email" placeholder="Email address">
+		<button id="invite-submit" type="submit">Request an invite!</button>
+		<div id="invite-error" class="error">Please enter a valid email address.</div>
 	</form>
 </section>
 
@@ -56,13 +52,18 @@
 <script>
 	window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>');
 	$(document).ready(function() {
-		var $form = $('#form1');
-		var $error = $('#error');
+		var $form = $('#invite-form');
+		var $error = $('#invite-error');
+		var $email = $('#invite-email');
+		var $button = $('#invite-submit');
 		var regexEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-		$form.submit(function(){
-			var email = $('#email-address').val();
+		$form.submit(function() {
+			$button.attr('disabled', true);
+			$error.hide();
+			var email = $email.val();
 			if (!email || !regexEmail.test(email)) {
-				$error.html('Please enter a valid email address.').show();
+				$button.attr('disabled', false);
+				$error.show();
 				return false;
 			}
 		});
