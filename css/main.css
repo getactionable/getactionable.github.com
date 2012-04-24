@@ -8,7 +8,7 @@ body {
 	text-shadow: 1px 1px 1px #fff;
 }
 
-h1 {
+h1, .site-title {
 	color: #333;
 	font-family:"Mahalia Bold", cursive;
 	font-size-adjust: .438;
@@ -19,10 +19,13 @@ h1 {
 		1px 0px 0px #fff,
 		2px 1px 1px #ad8559;
 }
-h1 span {
+h1 span, .site-title span {
 	font-size: .9em;
 }
-h2 {
+.site-logo {
+	display: none;
+}
+h2, .site-tagline {
 	font-size: 18px;
 	font-style: italic;
 	font-weight: normal;
