@@ -22,12 +22,12 @@ h1 {
 .site-title {
 	font-family:"Mahalia Bold", cursive;
 	font-size-adjust: .438;
-	font-size: 72px;
-	font-style:normal;
-	font-weight:bold;
+	font-size: 72px !important;
+	font-style: normal !important;
+	font-weight: bold !important;
 	text-shadow:
-		1px 0px 0px #fff,
-		2px 1px 1px #ad8559;
+		1px 0px 0px #333,
+		2px 1px 1px #666;
 }
 h1 span, .site-title span {
 	font-size: .9em;
