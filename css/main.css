@@ -22,9 +22,10 @@ h1 {
 .container .lrdiscoverwidget .site-title {
 	font-family:"Mahalia Bold", cursive;
 	font-size-adjust: .438;
-	font-size: 72px !important;
+	font-size: 32px !important;
 	font-style: normal !important;
 	font-weight: bold !important;
+	padding: 15px 0 0 !important;
 	text-shadow:
 		1px 0px 0px #333,
 		2px 1px 1px #666;
