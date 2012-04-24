@@ -19,7 +19,7 @@ h1 {
 		1px 0px 0px #fff,
 		2px 1px 1px #ad8559;
 }
-.site-title {
+.container .lrdiscoverwidget .site-title {
 	font-family:"Mahalia Bold", cursive;
 	font-size-adjust: .438;
 	font-size: 72px !important;
